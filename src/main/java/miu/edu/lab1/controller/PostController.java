@@ -39,8 +39,8 @@ public class PostController {
 
     @GetMapping("/{id}")
     public ResponseEntity<Post> getById(@PathVariable int id) {
-        var product = postService.findById(id);
-        return ResponseEntity.ok(product);
+        var post = postService.findById(id);
+        return ResponseEntity.ok(post);
     }
 
     @ResponseStatus(HttpStatus.NO_CONTENT)
